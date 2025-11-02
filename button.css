@@ -43,3 +43,27 @@
   /* Push the button downwards when pressed */
   transform: translateY(0);
 }
+
+@media (max-width: 1050px) {
+  .styled-button {
+    text-align: center;
+  }
+
+/* 2. BUTTON TOP (The visible layer that moves) */
+  .button_top {
+    max-width: 400px;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .styled-button{
+    height: 70px;
+    max-height: 150px;
+  }
+
+  .button-top{
+    height: 70px;
+    max-height: 150px;
+  }
+}

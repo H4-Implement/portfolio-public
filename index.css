@@ -98,7 +98,7 @@ body {
         }
 
         .card {
-            width: 45%;
+            width: auto;
             /* text-align: left; */
         }
 
@@ -109,6 +109,46 @@ body {
             width: 500px;
             height: auto;
             overflow: hidden;
+        }
+
+        @media (max-width:1050px) {
+            .div1 .container {
+                /* margin-top: 15px; */
+                margin-top: 75px;
+                /* background-color: #272727; */
+                background-image: linear-gradient(to bottom left, rgb(58, 58, 58), rgb(8, 8, 8));
+                color: white;
+                width: 100%;
+                max-width: 1750px;
+                height: 700px;
+                min-height: 600px;
+                padding: 10px;
+                display: block;
+                justify-content: center;
+                border-radius: 50px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+            }
+
+            .imgholder{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .div1 img {
+                position: relative;
+                clip-path: circle();
+                width: clamp(14rem, 25vw, 35rem);
+                height: auto;
+            }
+
+            .card {
+                width: 100%;
+                display: flexbox;
+                text-align: center;
+                /* text-align: left; */
+            }
         }
 
     /* DOWN ARROW */
@@ -166,127 +206,9 @@ body {
     
     /* Division 3 */
     /* SEE CAROUSEL.CSS */
-
-    /* TITLE DECOR BEFORE DIVISON 4 */
-    .title {
-        position: absolute; 
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        z-index: 0;
-        /* display: flex;
-        justify-content: center; */
-    }
-
-    .title .text {
-        margin: 10rem auto;
-    }
-
-    .title .text h1 {
-        /* white-space: nowrap; */
-        z-index: -1;
-        font-size: clamp(5rem, 25vw, 35rem);
-        color: #ffffff;
-        opacity: 0.8;
-    }
     
 /* DIVISION 4 */
-    .div4 {
-        margin: 15px auto;
-        width: 75%;
-        max-width: 1750px;
-    }
-
-    .div4 .container2 {
-        margin: 20px auto;
-    }
-
-    /* .div4 .container2 .NP .title {
-        position: absolute; 
-        z-index: 0;
-        opacity: 0.5; 
-        width: 75%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .div4 .container2 .NP .title h1{
-        position: absolute;
-        white-space: nowrap;
-        z-index: 0;
-        font-size: clamp(3rem, 14vw, 18rem);
-        line-height: 0;
-        display: flex;
-        justify-content: center;
-    } */
-
-    .div4 .container2 .NP {
-        color: rgb(255, 255, 255);
-        border-radius: 25px;
-        padding: 20px;
-        /* background-color: #1b1b1b; */
-        /* background-image: linear-gradient(to bottom right, rgb(30, 43, 165), rgb(48, 48, 48)); */
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-        position: relative;
-        gap: 75px;
-    }
-
-    .div4 .container2 .NP .card {
-        margin-top: 25px;
-        max-width: 275px;
-        width: 100%;
-        padding: 25px;
-        border-radius: 10px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: fit-content;
-
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.08);
-        border-radius: 16px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
-        backdrop-filter: blur(35.5px);
-        -webkit-backdrop-filter: blur(35.5px);
-    }
-
-    .div4 .container2 .NP .card .button{
-        display: flex;
-        justify-content: center;
-        height: 25%;
-    }
-
-    .div4 .container2 .NP .card .text {
-        display: block;
-        margin: auto;
-        padding: 2px 0;
-        text-align: justify;
-    }
-
-    .div4 .container2 .NP .card img {
-        width: 275px;
-        object-fit: cover;
-        height: auto;
-    }
-
-    .div4 .container2 .NP .card h2, a{
-        font-family: Arial, Helvetica, sans-serif;
-        margin: auto;
-        text-align: center;
-        font-size: 24px;
-    }
-
-    .div4 .container2 .NP .card p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        text-justify: inter-word;
-    }
-
-    .div4 .container2 .NP .card .text p {
-        line-height: 1.3;    /* Improves readability */
-    }
+/* see div4.css */
 
 /* DIVISION 5 */
 .div5 {
@@ -339,6 +261,39 @@ body {
 .div5 .container3 .social i:hover {
     color: rgb(50, 122, 231);
     font-size: 32px;
+}
+
+
+@media (max-width: 1050px) {
+    .div5 .container3 .contact{
+    width: 75%;
+    display: flexbox;
+    justify-content: center;
+    }
+
+    .div5 .container3 .social{
+    padding-top: 25px;
+    width: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    }
+}
+
+@media (max-width: 700px) {
+    .div5 .container3 .contact{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    }
+}
+
+@media (max-width: 500px) {
+    .div5 .container3 .contact{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    }
 }
 
 /* .div5 .container3 .contact {
