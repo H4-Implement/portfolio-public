@@ -99,7 +99,7 @@
 
     .tool-tag {
         margin: -15px auto;
-        display: block;
+        display: flexbox;
         justify-content: center;
     }
 
