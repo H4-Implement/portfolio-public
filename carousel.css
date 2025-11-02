@@ -1,0 +1,73 @@
+/* KEYFRAMES FOR THE SLIDING ANIMATION */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+/* BASE, DO NOT TOUCH */
+.div3 {
+    display: flex;
+    width: 75%;
+    margin: 20px auto; 
+    padding: 10px 0; /* Add some vertical space for clarity */
+    background-image: linear-gradient(to left, rgb(56, 56, 56), rgb(12, 12, 12));
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* CAROUSEL WRAPPER - Hides the overflowing content */
+.carousel-track-wrapper {
+    /* Set max-width if you want a fixed number of items visible */
+    width: 100%; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* Optional: Add a shadow/gradient to indicate the edge */
+    /* box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* CAROUSEL TRACK - The element that will be animated */
+.carousel-track {
+    display: flex;
+    /* Calculate the total width of all cards (Original + Duplicated). 
+       In this example, there are 17 original cards, so we need a width 
+       of 34 cards (17*2). Set the width to roughly double the visible area. 
+       This 200% is relative to the *track-wrapper* which is 100% of .div3. */
+    width: 200%; /* Important for the seamless loop to work with the 50% translate */
+    
+    /* APPLY THE AUTOPLAY ANIMATION */
+    animation: scroll 20s linear infinite; /* 30s is the duration, linear for consistent speed, infinite loop */
+}
+
+/* PAUSE ON HOVER */
+.carousel-track-wrapper:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+/* CARD STYLES */
+.carousel-track .card {
+    /* Set a fixed width for each card. This is crucial for the animation math to work. */
+    /* Total original cards: 17. 100% / 17 cards ≈ 5.88% */
+    width: calc(100% / 20); /* Set each card's width relative to the original set (50% of track width) */
+    flex-shrink: 0; /* Prevents cards from shrinking */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BASE PART */
+.carousel-track .card img {
+    width: 75px;
+    height: auto;
+    padding: 20px;
+}
+
+@media(max-width: 1200px) {
+    .carousel-track .card img {
+        width: 50px;
+    }
+}

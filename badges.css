@@ -1,0 +1,114 @@
+/* BADGES */
+/* THIS IS ON DIV 4 */
+
+#html {
+    background: rgba(21, 255, 60, 0.2);
+}
+#css {
+    background: rgba(21, 130, 255, 0.2);
+}
+#js {
+    background: rgba(240, 255, 30, 0.2);
+}
+#php {
+    background: rgba(136, 61, 255, 0.2);
+}
+#java {
+    background: rgba(255, 162, 40, 0.2);
+}
+#py {
+    background: rgba(37, 21, 255, 0.2);
+}
+#bs {
+    background: rgba(37, 21, 255, 0.432);
+}
+#sass {
+    background: rgba(255, 48, 245, 0.2);
+}
+#swift {
+    background: rgba(255, 98, 7, 0.2);
+}
+#cplus {
+    background: rgba(5, 146, 0, 0.2);
+}
+#xampp {
+    background: rgba(255, 209, 4, 0.418);
+}
+#react {
+    background: rgba(21, 103, 255, 0.2);
+}
+#ci {
+    background: rgba(255, 134, 21, 0.26);
+}
+#figma {
+    background: rgba(255, 94, 30, 0.2);
+}
+#psd {
+    background: rgba(21, 142, 255, 0.2);
+}
+#ill {
+    background: rgba(255, 154, 21, 0.2);
+}
+#prem {
+    background: rgba(21, 130, 255, 0.2);
+}
+#canva {
+    background: rgba(21, 169, 255, 0.2);
+}
+#sai {
+    background: rgba(21, 255, 60, 0.2);
+}
+#medi {
+    background: rgba(21, 255, 52, 0.2);
+}
+
+/* EXTERNAL */
+
+#laravel {
+    background: rgba(253, 43, 43, 0.2);
+}
+#supabase {
+    background: rgba(22, 206, 53, 0.2);
+}
+#openai {
+    background: rgba(16, 44, 66, 0.514);
+}
+#railway {
+    background: rgba(180, 44, 10, 0.2);
+}
+#node {
+    background: rgba(43, 253, 106, 0.2);
+}
+#paymongo {
+    background: rgba(11, 104, 26, 0.2);
+}
+#expo {
+    background: rgba(29, 29, 29, 0.2);
+}
+#hostinger {
+    background: rgba(207, 0, 0, 0.522);
+}
+
+/* design */
+
+    .tools {
+        justify-content: center;
+        margin: 7.5px auto;
+        margin-bottom: 15px;
+    }
+
+    .tool-tag {
+        margin: -15px auto;
+        display: block;
+        justify-content: center;
+    }
+
+    .tool-tags {
+        font-family: "Ubuntu", sans-serif;;
+        margin: 3px auto;
+        display: inline-block;
+        gap: 2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 25px;
+        font-size: 0.85rem;
+    }
